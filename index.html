@@ -23,7 +23,7 @@
         margin: 0;
         font-family: 'Prompt', sans-serif;
         color: white;
-        background: #202731;
+        background: #001220;
         overflow-x: hidden;
       }
 
@@ -50,7 +50,7 @@
       }
 
       .dark {
-        background: #0f0f10;
+        background: #001220;
       }
 
       /* Curved bg with plain CSS */
@@ -71,7 +71,7 @@
         width: 55%;
         height: 100%;
         transform: translate(85%, 60%);
-        background-color: hsl(216, 21%, 16%);
+        background-color: #001220;
       }
 
       .curve::after {
@@ -96,7 +96,7 @@
         bottom: 0;
         z-index: -1;
         width: 100%;
-        background-color: #0f0f10;
+        background-color: #C62368;
         height: 85%;
       }
 
@@ -133,10 +133,10 @@
       }
 
       .layer1 {
-        background-image: url('./layer1.svg');
+        background-image: url('./elements/layer1.svg');
       }
       .layer2 {
-        background-image: url('./layer2.svg');
+        background-image: url('./elements/layer2.svg');
       }
 
       .flip {
@@ -157,7 +157,7 @@
 
       .blobs {
         width: 100%;
-        background: url('./blobs.svg') no-repeat bottom / cover;
+        background: url('./elements/blobs.svg') no-repeat bottom / cover;
       }
     </style>
   </head>
@@ -177,6 +177,8 @@
       <h1>Nice Curves!</h1>
       <p>A website is like a road. The more curves it has the more interesting it is.</p>
     </section>
+
+    <div class="spacer layer1"></div>
 
     <section class="dark">
       <h1>Nice Curves!</h1>
@@ -204,7 +206,7 @@
       <p>A website is like a road. The more curves it has the more interesting it is.</p>
     </section>
 
-    <div class="spacer layer2 flip"></div>
+    <div class="spacer layer2"></div>
 
     <section class="pink">
       <div class="blob-content">
@@ -248,7 +250,7 @@
       </script>
     </section>
 
-    <div class="spacer layer2"></div>
+    <div class="spacer layer2 flip"></div>
 
     <section class="blobs">
       <h1>Nice Curves!</h1>
